@@ -20,9 +20,9 @@ It shares pixels: **there is no automatic task-state detection, completion notif
 
 ### Around the home
 
-The two device images below are **hand-composited demos, not AI-generated scenes**. They use native text renders of this repository's public source and recorded self-check output, placed in manually drawn device frames. Home-style controls are simplified, not actual tvOS/iPhone screenshots or proof of live playback. The app's own interface previews are shown separately below.
+Below is a **manual composite of real macOS Home and ChatGPT screenshots**. The native Home controls are retained; the video area contains a separate ChatGPT capture. This illustrates the idea, not live playback or an iPhone/tvOS interface. No image-generation model or hand-drawn replacement UI is used.
 
-<img src="docs/assets/demo-tv.png" width="800" alt="Hand-composited TV demo using public project source and test output, not a live tvOS screenshot">
+<img src="docs/assets/home-chatgpt-demo.png" width="1000" alt="Actual macOS Home camera-view controls with a real ChatGPT screenshot manually inserted; labeled composite demonstration">
 
 **From the sofa:** open the workspace camera on Apple TV to check a long-running task, then return to what you were watching.
 
@@ -34,7 +34,9 @@ The two device images below are **hand-composited demos, not AI-generated scenes
 | Slides and visual references | A deck, storyboard or reference board you want to glance at elsewhere. Advance or edit it on the Mac. |
 | Away from the desk | Check the same screen on your phone. Outside the LAN, Apple Home remote access needs a configured, online home hub and a working network path. |
 
-<img src="docs/assets/demo-phone.png" width="500" alt="Hand-composited phone demo with the same sample screen in a simplified Home-style camera card">
+<img src="docs/assets/chatgpt-demo.png" width="800" alt="Actual ChatGPT temporary conversation showing a small Python example, with private navigation and browser tabs cropped out">
+
+The source screen is a real temporary ChatGPT conversation prepared for this demonstration, not a private chat. For the actual iPhone and Apple TV layouts, see [Apple's Home overview](https://www.apple.com/home-app/) and [Apple's TV camera guide](https://support.apple.com/guide/tv/atvb90537bb0/tvos). Their promotional images are not redistributed here.
 
 **On your phone:** check the same workspace from another room. For exports or renders, progress comes from the app already running on the Mac, not from automatic recognition.
 
@@ -148,9 +150,9 @@ Screen Home Monitor 是一个原生 macOS 菜单栏工具：把选中的屏幕�
 
 ### 使用场景
 
-以下两张设备图是**手工合成演示，不是 AI 生成场景**：将本项目公开源码与已记录的自检结果进行原生文字渲染，再放入手绘设备边框。家庭风格控件经过简化，不是 tvOS／iPhone 真实截图，也不作为实时播放证据。App 自身的界面预览在后面单独展示。
+下面是**真实 macOS 家庭界面与 ChatGPT 截图的手工合成**：保留原生家庭控件，只将视频区域换成另一张 ChatGPT 实际截图。它说明使用方式，不代表实时播放，也不是 iPhone／tvOS 界面。没有使用图像生成，也没有手绘替代 UI。
 
-<img src="docs/assets/demo-tv.png" width="800" alt="手工合成的电视演示图，使用公开项目源码和自检结果，不是 tvOS 实拍">
+<img src="docs/assets/home-chatgpt-demo.png" width="1000" alt="真实 macOS 家庭摄像头控件中手工嵌入真实 ChatGPT 截图，已标注合成演示">
 
 **坐在沙发上：** 在 Apple TV 打开工作屏幕摄像头，看一眼长任务的进展，再回到正在看的节目。
 
@@ -162,7 +164,9 @@ Screen Home Monitor 是一个原生 macOS 菜单栏工具：把选中的屏幕�
 | 演示与参考资料 | 幻灯片、分镜或参考图板；翻页和编辑仍在 Mac 上操作。 |
 | 离开电脑后查看 | 在手机上看同一块屏幕；局域网外访问需要已配置且在线的 Apple 家庭中枢和正常网络链路。 |
 
-<img src="docs/assets/demo-phone.png" width="500" alt="手工合成的手机演示图，简化的家庭风格卡片内显示同一份示例画面">
+<img src="docs/assets/chatgpt-demo.png" width="800" alt="真实 ChatGPT 临时对话截图，展示简单 Python 示例，已裁掉私人导航栏和浏览器标签">
+
+源画面是专门为展示准备的真实 ChatGPT 临时对话，不是私人聊天。iPhone 和 Apple TV 的真实布局可查看 [Apple 家庭介绍](https://www.apple.com/home-app/)和 [Apple TV 摄像头指南](https://support.apple.com/guide/tv/atvb90537bb0/tvos)；仓库不重新分发它们的宣传图片。
 
 **拿起手机看一眼：** 在另一个房间查看同一块工作屏幕。若查看导出或渲染，进度来自 Mac 上原本运行的软件，不是本工具自动识别的结果。
 

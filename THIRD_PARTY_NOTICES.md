@@ -4,6 +4,8 @@
 
 ## English
 
+Documentation includes locally captured Apple Home and ChatGPT interface portions in a labeled composite. Apple and OpenAI retain rights in their UI and marks; those portions are excluded from this repository's original-content license. See [image provenance](docs/ASSETS.md). This is not an official Apple or OpenAI demonstration.
+
 This source archive contains the native app and project-owned integration
 scripts only. Dependencies are installed separately:
 
@@ -26,6 +28,8 @@ it does not replace or restrict third-party licenses.
 ---
 
 ## 中文
+
+文档包含本机截取的 Apple 家庭与 ChatGPT 界面部分，并明确标注合成。Apple 和 OpenAI 保留各自界面和商标权利，这些部分不适用本仓库原创内容许可。来源见[素材说明](docs/ASSETS.md)。这不是 Apple 或 OpenAI 官方演示。
 
 本源码包包含原生 App 和项目自有的集成脚本。依赖另行安装：
 

@@ -7,12 +7,15 @@
 - `assets/logo.png`: generated and edited with the built-in imagegen tool at the user's request. Two offset, open screen outlines in black on white.
 - `assets/menu.png` and `assets/settings.png`: local offscreen renders of the repository's actual SwiftUI components. These are not Apple Home live-stream screenshots and do not fake a successful Streaming state. Isolated sample preferences are used without reading the private RTSP destination.
 - Regenerate the interface previews on Mac with `zsh macOS/scripts/render-previews.sh`.
-- `assets/demo-tv.png` and `assets/demo-phone.png`: deterministic, hand-composited device demonstrations, not generated images. Device frames and simplified Home-style layouts are drawn in AppKit. The inset is `assets/demo-screen.png`, a native text render of public `macOS/Tests/SelfCheck.swift` and recorded local self-check output. It is sample content, not a live stream or an actual tvOS/iPhone screenshot.
-- Rebuild the composites from the repository root with `swift scripts/compose-previews.swift`. The editable composition source is included. No private Home names, device lists, current screen content or connection details are published.
+- `assets/home-chatgpt-demo.png`: a manual composite made from actual, locally captured macOS Home and ChatGPT UI screenshots. Native Home controls are preserved, while the unavailable camera area is replaced with the ChatGPT screenshot. The original camera was offline during capture; its status is explicitly replaced by `COMPOSITE`, not by a false Live/Connected indicator. This is not a live-playback test or an iPhone/tvOS screenshot.
+- `assets/chatgpt-demo.png`: actual ChatGPT temporary-chat response to a deliberately public Python-example prompt. Browser tabs, address bar and the left navigation/profile rail are cropped out. No private conversation, Home name or device list is published.
+- `scripts/compose-home-demo.swift` contains the editable crop and composition recipe. It requires two local screenshots; the unredacted originals remain outside the repository. Crop coordinates are checked against the captured dimensions before running.
 
 ### Composition and boundaries
 
-Plain off-white backgrounds, black device outlines and restrained type. There are no generated rooms, hands or lifestyle photographs. Both composites carry a visible disclosure. The earlier generated scene explorations were rejected and excluded from the repository. The previously approved logo remains the only generated asset in this release.
+The original UI pixels are used, not hand-drawn approximations. The composite carries a visible disclosure. Earlier generated scenes and simplified device mockups were rejected and removed from the current release; historical Git commits may still contain the latter. The approved logo is the only generated image in this release.
+
+Apple's [Home overview](https://www.apple.com/home-app/) and [TV camera guide](https://support.apple.com/guide/tv/atvb90537bb0/tvos) were consulted as references. Their promotional images are not included. See Apple's [image and trademark guidelines](https://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html). Apple and OpenAI retain rights in their respective interfaces and marks; those UI portions are not relicensed under this project's source license. No endorsement is implied.
 
 The GitHub introduction uses the root `README.md` and its images. The upload package contains no standalone website or GitHub Pages configuration. Earlier website designs are preserved in an archive outside the repository and are not published.
 
@@ -27,12 +30,15 @@ Preserve the double-screen composition, both open outlines, rounded corners, spa
 - `assets/logo.png`：使用内置 imagegen 生成并按用户要求修改的标志：白底、黑色线条，两个错位的开放屏幕轮廓。
 - `assets/menu.png`、`assets/settings.png`：使用仓库内真实 SwiftUI 组件在本机离屏渲染。不是 Apple 家庭直播截图，也没有伪造 Streaming 成功状态。使用独立的示例偏好设置，不读取私人 RTSP 目的地。
 - 可在 Mac 上通过 `zsh macOS/scripts/render-previews.sh` 重新生成界面图。
-- `assets/demo-tv.png`、`assets/demo-phone.png`：确定性的手工合成设备演示图，未使用图像生成。AppKit 绘制设备边框和简化的家庭风格布局，内部嵌入 `assets/demo-screen.png`，内容为公开的 `macOS/Tests/SelfCheck.swift` 及已记录的本地自检输出的原生文字渲染。它是示例内容，不是实时流或 tvOS／iPhone 真实截图。
-- 在仓库根目录执行 `swift scripts/compose-previews.swift` 可重新合成，仓库附有可编辑的合成源码。不发布私人家庭名称、设备列表、当前屏幕内容或连接信息。
+- `assets/home-chatgpt-demo.png`：基于本机实际截取的 macOS 家庭与 ChatGPT 界面进行手工合成，保留原生家庭控件，只将不可用的视频区域换成 ChatGPT 截图。截取时摄像头离线，因此状态明确改为 `COMPOSITE`，没有伪造“实时／已连接”标记。这不是播放测试或 iPhone／tvOS 截图。
+- `assets/chatgpt-demo.png`：真实 ChatGPT 临时对话回复，提示词为专门准备的公开 Python 示例。已裁掉浏览器标签、地址栏和左侧导航／个人资料栏，不包含私人对话、家庭名称或设备列表。
+- `scripts/compose-home-demo.swift` 是可编辑的裁切与合成脚本，需要两张本地截图。未脱敏原图保留在仓库外，运行时会检查截图尺寸是否匹配裁切坐标。
 
 ### 合成方式与边界
 
-纯浅色底、黑色设备轮廓、简洁文字，没有生成式房间、手部或生活方式照片。两张图均带有明显的合成说明。此前生成的场景草案被弃用，不包含在仓库里；本次发布仅保留此前已认可的生成式 logo。
+使用原始界面像素，不手绘近似 UI，合成图带有明显说明。之前的生成式场景与简化设备框已弃用并移出当前版本，历史 Git 提交仍可能含有后者。当前发布只有已认可的 logo 是生成式图片。
+
+参考了 Apple 的[家庭介绍](https://www.apple.com/home-app/)与 [TV 摄像头指南](https://support.apple.com/guide/tv/atvb90537bb0/tvos)，未将其宣传图收录进仓库。参见 Apple 的[图片和商标指南](https://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html)。Apple 和 OpenAI 保留各自界面与商标权利，界面部分不按本项目源码许可重新授权，也不表示官方认可。
 
 GitHub 仓库介绍使用根目录 `README.md` 的文字与图片。上传包不包含独立网页或 GitHub Pages 配置。早期网页设计保留在仓库外的设计归档目录，不参与发布。
 
