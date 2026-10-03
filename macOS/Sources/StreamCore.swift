@@ -135,14 +135,14 @@ final class StreamController: ObservableObject {
             object: nil,
             queue: .main
         ) { [weak self] _ in
-            Task { @MainActor in self?.screensChanged() }
+            Task { @MainActor [weak self] in self?.screensChanged() }
         }
         terminationObserver = NotificationCenter.default.addObserver(
             forName: NSApplication.willTerminateNotification,
             object: nil,
             queue: .main
         ) { [weak self] _ in
-            Task { @MainActor in self?.stop() }
+            Task { @MainActor [weak self] in self?.stop() }
         }
     }
 
@@ -219,11 +219,11 @@ final class StreamController: ObservableObject {
         errorPipe.fileHandleForReading.readabilityHandler = { [weak self] handle in
             let data = handle.availableData
             guard !data.isEmpty else { return }
-            Task { @MainActor in self?.appendErrorOutput(data) }
+            Task { @MainActor [weak self] in self?.appendErrorOutput(data) }
         }
         launched.terminationHandler = { [weak self, weak launched] process in
             errorPipe.fileHandleForReading.readabilityHandler = nil
-            Task { @MainActor in
+            Task { @MainActor [weak self, weak launched] in
                 let message = String(decoding: self?.errorTail.suffix(1_500) ?? Data(), as: UTF8.self)
                 self?.processEnded(launched, status: process.terminationStatus, error: message)
             }

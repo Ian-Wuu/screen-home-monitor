@@ -1,21 +1,69 @@
-MIT License
+Screen Home Monitor Source-Available License 1.0
+Commercial Works Allowed; Software Commercialization Restricted
 
 Copyright (c) 2026 AI Screen Stream contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Scope and definitions
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+"Software" means this repository's original source code, scripts,
+documentation and assets supplied under this license, in source or binary
+form, including modified versions and derivative works of that material.
+Separately licensed third-party components are not covered by this license.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+"Independent Works" means works you create, observe or present using the
+Software, such as videos, images, designs, client deliverables or your own
+applications, that do not incorporate or derive from the Software's code or
+assets. Merely appearing in a shared screen does not make a work a derivative
+of the Software.
+
+2. Permission to use and create commercial works
+
+Subject to this license, you may use, study, copy and modify the Software
+for personal, educational and internal business purposes. You may use it
+as a tool in paid work and to create, display, sell or otherwise commercially
+exploit Independent Works. No royalty, attribution or source-disclosure
+requirement is imposed by this license on those Independent Works.
+
+You may redistribute the Software, including modified versions, on a
+non-commercial basis under this license. Preserve this license and copyright
+notices in copies and substantial portions, and identify your modifications.
+
+3. No commercialization of the Software
+
+Without separate permission from the relevant copyright holders, you may
+not sell, rent, commercially license or otherwise monetize the Software
+itself, its source code, compiled versions or modified versions. You may not
+incorporate them into a commercial product or offer their functionality to
+third parties as a commercial service, including paid hosting, SaaS,
+subscriptions, paid access, advertising-supported offerings or a free
+component bundled into a commercial product or service.
+
+Charging for Independent Works or your work producing them is allowed by
+Section 2. Charging customers for access to, deployment of, or operation of
+the Software as a product or service is not. Internal business use does not
+by itself constitute offering the Software as a commercial service.
+
+4. Third-party rights and reserved rights
+
+This license grants no rights in third-party software, trademarks or content
+shown on a shared display. Their own terms continue to apply. Rights not
+expressly granted are reserved. This is a custom source-available license,
+not the MIT License or an OSI-approved open-source license.
+
+5. Previous releases
+
+This license applies to versions distributed with this notice. The initial
+Git commit 7b947b4 was published under MIT. This notice does not revoke or
+restrict rights already granted under MIT for that earlier material; changes
+to a license notice alone cannot remove those earlier permissions.
+
+6. Disclaimer
+
+The Software is provided "as is", without warranty of any kind, express or
+implied, including warranties of merchantability, fitness for a particular
+purpose and noninfringement. To the extent permitted by applicable law,
+the authors and copyright holders are not liable for any claim, damages or
+other liability arising from or related to the Software or its use, whether
+in contract, tort or otherwise.
+
+The English text controls. LICENSE.zh-CN.md is a Chinese reference translation.
