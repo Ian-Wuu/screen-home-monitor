@@ -34,7 +34,7 @@ Repository: [`Ian-Wuu/screen-home-monitor`](https://github.com/Ian-Wuu/screen-ho
 - English description: Your Mac screen in Apple Home. A lightweight menu-bar monitor for Apple TV, iPhone and Mac.
 - 中文介绍：把 Mac 屏幕接入 Apple 家庭，在 Apple TV、iPhone 和 Mac 上随时查看。
 
-The root README provides the GitHub introduction with prose and two native interface previews. The focus is checking AI work while watching TV; there is no separate website or automatic task-state detection.
+The root README provides the GitHub introduction with prose, two labeled hand-composited device demos and two native interface previews. Scenarios include coding tasks, renders and exports, personal status boards and visual references. There is no separate website or automatic task-state detection.
 
 Publish the source, documentation, `server/`, `scripts/`, `macOS/` and `.github/`. Exclude `.git/` internals, `dist/`, `.build/`, `server/private/`, `server/volume/` and FFmpeg binaries. `scripts/package-source.sh` exports the Git staging index into a source ZIP, so stage intended changes before running it.
 
@@ -82,7 +82,7 @@ AI_SIGN_IDENTITY='你的代码签名证书名称' zsh macOS/scripts/build.sh
 
 仓库：[`Ian-Wuu/screen-home-monitor`](https://github.com/Ian-Wuu/screen-home-monitor)。介绍：把 Mac 屏幕接入 Apple 家庭，在 Apple TV、iPhone 和 Mac 上随时查看。
 
-GitHub 首页使用根目录 README 的文字和两张原生界面预览图。核心场景是在看电视期间查看 Mac 上 AI 任务的画面，不包含独立网站或自动状态识别。
+GitHub 首页使用根目录 README 的文字、两张明确标注的手工合成设备演示图和两张原生界面预览图。场景包括编程任务、渲染导出、个人看板和参考资料，不包含独立网站或自动状态识别。
 
 上传仓库根目录的源码、说明、`server/`、`scripts/`、`macOS/` 和 `.github/`。不要上传 `.git/` 内部文件、`dist/`、`.build/`、`server/private/`、`server/volume/` 或 FFmpeg 二进制。`scripts/package-source.sh` 会从 Git 暂存清单生成源码 ZIP。
 

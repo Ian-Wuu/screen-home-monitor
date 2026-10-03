@@ -10,7 +10,7 @@
 
 **Your Mac screen, in Apple Home.**
 
-Let an AI tool write code or run a task on your Mac while you watch TV. When you want to see whether it is still working, has finished, or needs your input, open the corresponding Home camera on Apple TV to see the original AI window.
+Leave a render, export, build or AI task running on your Mac. Check the screen from your sofa, another room or your phone without walking back to the desk. You can also keep a status board or presentation visible through an Apple Home camera.
 
 Screen Home Monitor is a native macOS menu-bar utility. It sends a selected display through a Linux server on your local network and exposes it as a camera in Apple Home, viewable from Apple TV, iPhone, and Mac.
 
@@ -18,12 +18,36 @@ The existing app bundle and identifiers retain the earlier name, AI Screen Strea
 
 It shares pixels: **there is no automatic task-state detection, completion notification, or remote control.** You read the progress from the screen yourself. No integration with an AI tool's API is required.
 
-### Typical use
+### Around the home
 
-1. Start an AI task on your Mac and place its window on the display you want to share.
+The two device images below are **hand-composited demos, not AI-generated scenes**. They use native text renders of this repository's public source and recorded self-check output, placed in manually drawn device frames. Home-style controls are simplified, not actual tvOS/iPhone screenshots or proof of live playback. The app's own interface previews are shown separately below.
+
+<img src="docs/assets/demo-tv.png" width="800" alt="Hand-composited TV demo using public project source and test output, not a live tvOS screenshot">
+
+**From the sofa:** open the workspace camera on Apple TV to check a long-running task, then return to what you were watching.
+
+| Use case | What to put on the Mac screen |
+| --- | --- |
+| Coding and AI tasks | A terminal, build log or coding assistant waiting for input. |
+| Rendering and exports | A 3D render, video export, photo batch or file-transfer progress window. |
+| Personal status boards | A browser page with job queues, schedules or your own project dashboard. |
+| Slides and visual references | A deck, storyboard or reference board you want to glance at elsewhere. Advance or edit it on the Mac. |
+| Away from the desk | Check the same screen on your phone. Outside the LAN, Apple Home remote access needs a configured, online home hub and a working network path. |
+
+<img src="docs/assets/demo-phone.png" width="500" alt="Hand-composited phone demo with the same sample screen in a simplified Home-style camera card">
+
+**On your phone:** check the same workspace from another room. For exports or renders, progress comes from the app already running on the Mac, not from automatic recognition.
+
+**A shared reference:** put your own status board on the selected display and view it from another device. The board is not a built-in feature of Screen Home Monitor.
+
+This is a view-only convenience, not a low-latency display replacement, remote desktop, audio stream or safety-critical monitor. Keep sensitive windows and notifications off the shared display.
+
+### Everyday workflow
+
+1. Put a task, progress window, dashboard or visual reference on the display you want to share.
 2. Select that display in the menu bar and click **Start Streaming**.
-3. While watching TV, open the matching Home camera on Apple TV whenever you want to check progress.
-4. Return to your Mac when the task is finished or needs input. Click **Stop Streaming** when done.
+3. Open the matching Home camera on Apple TV, iPhone or Mac whenever you want to look.
+4. Return to the source Mac if interaction is needed. Click **Stop Streaming** when done.
 
 Automatic pop-ups, status overlays, and persistent picture-in-picture are not promised. Camera access on the TV depends on the Apple TV system interface.
 
@@ -114,7 +138,7 @@ This is an independent personal project, not affiliated with, sponsored by, or c
 
 **把 Mac 屏幕，接入 Apple 家庭。**
 
-让 AI 在 Mac 上写代码、跑任务，自己去看电视。想知道它还在执行、已经完成，还是停在某一步等你操作时，在 Apple TV 的家庭摄像头入口打开电脑画面，就能直接看到原来的 AI 窗口。
+让 Mac 继续渲染、导出、编译或运行 AI 任务，自己去看电视、到另一个房间，想知道进度时打开家庭摄像头看一眼，不必总往电脑前跑。也可以把状态看板、演示文稿或参考图留在屏幕上，方便从其他设备查看。
 
 Screen Home Monitor 是一个原生 macOS 菜单栏工具：把选中的屏幕作为视频源，通过局域网里的 Linux 主机接入 Apple「家庭」。Apple TV、iPhone 和 Mac 都可以查看。
 
@@ -124,10 +148,34 @@ Screen Home Monitor 是一个原生 macOS 菜单栏工具：把选中的屏幕�
 
 ### 使用场景
 
-1. 在 Mac 上开始 AI 任务，把任务窗口放在准备共享的显示器上。
+以下两张设备图是**手工合成演示，不是 AI 生成场景**：将本项目公开源码与已记录的自检结果进行原生文字渲染，再放入手绘设备边框。家庭风格控件经过简化，不是 tvOS／iPhone 真实截图，也不作为实时播放证据。App 自身的界面预览在后面单独展示。
+
+<img src="docs/assets/demo-tv.png" width="800" alt="手工合成的电视演示图，使用公开项目源码和自检结果，不是 tvOS 实拍">
+
+**坐在沙发上：** 在 Apple TV 打开工作屏幕摄像头，看一眼长任务的进展，再回到正在看的节目。
+
+| 场景 | Mac 屏幕上放什么 |
+| --- | --- |
+| 编程与 AI 任务 | 终端、编译日志，或可能需要你接手的编程助手。 |
+| 渲染与导出 | 3D 渲染、视频导出、批量修图或文件传输的进度窗口。 |
+| 个人状态看板 | 展示任务队列、日程或项目看板的浏览器页面。 |
+| 演示与参考资料 | 幻灯片、分镜或参考图板；翻页和编辑仍在 Mac 上操作。 |
+| 离开电脑后查看 | 在手机上看同一块屏幕；局域网外访问需要已配置且在线的 Apple 家庭中枢和正常网络链路。 |
+
+<img src="docs/assets/demo-phone.png" width="500" alt="手工合成的手机演示图，简化的家庭风格卡片内显示同一份示例画面">
+
+**拿起手机看一眼：** 在另一个房间查看同一块工作屏幕。若查看导出或渲染，进度来自 Mac 上原本运行的软件，不是本工具自动识别的结果。
+
+**随处查看参考信息：** 将自己的看板放在选中的显示器上，从另一台设备查看。看板不是 Screen Home Monitor 的内置功能。
+
+这是只读查看工具，不是低延迟外接显示器、远程桌面、音频传输或安全关键监控。共享前请移开敏感窗口，并注意通知内容。
+
+### 日常操作
+
+1. 把任务、进度窗口、看板或参考资料放在准备共享的显示器上。
 2. 在菜单栏选择这块显示器，点击 **Start Streaming**。
-3. 看电视期间，需要了解任务进度时，在 Apple TV 打开对应的家庭摄像头。
-4. 看到任务结束或需要接手，再回到电脑。用完后点 **Stop Streaming**。
+3. 需要查看时，在 Apple TV、iPhone 或 Mac 上打开对应的家庭摄像头。
+4. 需要操作时回到源 Mac；用完后点 **Stop Streaming**。
 
 这里不承诺自动弹窗、状态叠加或持续画中画；电视端如何打开摄像头取决于 Apple TV 的系统界面。
 

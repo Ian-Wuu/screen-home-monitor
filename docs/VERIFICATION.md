@@ -14,12 +14,12 @@ Repository preparation date: 2026-10-03. This is not a claim that the home devic
 - Mac self-checks and compilation for Apple Silicon with a macOS 13 target passed. Public builds use a credential-free example URL and do not bundle FFmpeg.
 - Strict signature checking failed on the loose `.app` in the synced folder because of FinderInfo attributes. The same build's ZIP passed after extraction into an ordinary temporary directory.
 - Source ZIP integrity passed. It exports only staged Git files, excluding private configuration and runtime data.
+- GitHub Actions passed for commit `426f1f0`: server configuration checks, Mac self-check, app build and strict signature verification. [Run details](https://github.com/Ian-Wuu/screen-home-monitor/actions/runs/37125084050).
 
 ### Not verified or not included
 
 - Docker CLI was unavailable locally; Compose containers and remote image pulls were not tested.
 - The new Compose deployment has not passed end-to-end acceptance on a clean Linux host.
-- The initial GitHub Actions run passed server checks but failed Mac compilation on nested weak captures. An explicit-capture compatibility fix is included; check the latest Actions run for its remote result.
 - This preparation did not retest Apple Home playback, cellular access, HomePod failover or a continuous two-hour session.
 - The release does not include FFmpeg binaries, a notarized installer, personal accounts, Home pairing databases or automatic migration of an existing server.
 
@@ -41,12 +41,12 @@ In August 2026, the user confirmed Mac and Apple TV playback and remote viewing 
 - Mac 自检通过；Apple Silicon/macOS 13 目标编译通过。公开构建使用无凭据的示例地址，未内置 FFmpeg。
 - 同步目录里的 `.app` 由于 FinderInfo 属性未通过严格签名检查；同一构建 ZIP 解压到普通临时目录后，严格签名校验通过。
 - 源码 ZIP 完整性检查通过，只从 Git 暂存清单导出，不携带私密配置和运行时数据。
+- 提交 `426f1f0` 的 GitHub Actions 已通过：服务器配置检查、Mac 自检、App 构建与严格签名验证。[运行记录](https://github.com/Ian-Wuu/screen-home-monitor/actions/runs/37125084050)。
 
 ### 没有验证或不包含
 
 - 本机没有 Docker CLI；没有运行 Compose 容器或验证远端镜像拉取。
 - 新 Compose 部署没有在全新 Linux 主机上完成端到端验收。
-- 首次 GitHub Actions 的服务器检查通过，Mac 编译因嵌套弱引用捕获失败。已加入显式捕获兼容性修正，远端结果以最新 Actions 运行为准。
 - 没有在本次整理中重新测试 Apple 家庭、蜂窝网络、HomePod 故障切换或连续两小时运行。
 - 不包含 FFmpeg 二进制、公证后的安装程序、个人账号、家庭配对数据库或现有服务器自动迁移工具。
 
