@@ -1,0 +1,19 @@
+name: Source checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/self-check.py
+      - run: python3 scripts/setup-server.py --host screen-server.local
+      - run: docker compose -f server/compose.yaml config --quiet
+  macos:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - run: zsh macOS/scripts/self-check.sh
+      - run: AI_SIGN_IDENTITY=- zsh macOS/scripts/build.sh
+      - run: codesign --verify --deep --strict 'dist/AI Screen Stream.app'

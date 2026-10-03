@@ -1,0 +1,30 @@
+logLevel: info
+authMethod: internal
+authInternalUsers:
+  - user: mac_publish
+    pass: "sha256:__PUBLISH_HASH__"
+    permissions:
+      - action: publish
+        path: ai_workspace
+  - user: camera_read
+    pass: "sha256:__READ_HASH__"
+    permissions:
+      - action: read
+        path: ai_workspace
+rtsp: true
+rtspAddress: ":8554"
+rtspTransports: [tcp]
+rtspAuthMethods: [basic]
+api: false
+metrics: false
+pprof: false
+playback: false
+rtmp: false
+hls: false
+webrtc: false
+srt: false
+paths:
+  ai_workspace:
+    source: publisher
+    record: false
+    overridePublisher: false

@@ -1,0 +1,15 @@
+name: ai-screen-stream
+services:
+  mediamtx:
+    image: bluenviron/mediamtx:1.18.2
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./private/mediamtx.yml:/mediamtx.yml:ro
+  scrypted:
+    # Historical deployment image, deliberately pinned. See docs/OPERATIONS.md.
+    image: ghcr.io/koush/scrypted@sha256:d92de598b5807fd7564964dd78ef7938c494dc1de4a1dafd65243e0dbdc15dbd
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./volume:/server/volume
